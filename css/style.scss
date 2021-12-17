@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaushan+Script&family=Mogra&family=Pacifico&family=Yellowtail&display=swap');
+
+:root {
+  --Noto-Sans-Japanese : 'Noto Sans JP', sans-serif;
+  --Lato :'Lato', sans-serif;
+  --Dancing : 'Dancing Script', cursive;
+  --Kaushan : 'Kaushan Script', cursive;
+  --Mogra : 'Mogra', cursive;
+  --Pacifico: 'Pacifico', cursive;
+  --Yellowtail: 'Yellowtail', cursive;
+
+
+  /* Original Fonts */
+  --Gilroy : 'Gilroy', sans-serif;
+  --Barbershop-in-Thailand: 'Barbershop in Thailand', cursive;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: var(--Gilroy);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+}
+
+header {
+  background-image: url(../img/home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 0;
+    .logo {
+      padding-left: 9rem;
+      span {
+        color: white;
+        font-family: var(--Barbershop-in-Thailand);
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 1.7rem;
+      }
+    }
+    .items {
+      padding-right: 9rem;
+      ul {
+        list-style: none;
+        li {
+          display: inline-flex;
+          margin: 0 0.7rem;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .container {
+    display: grid;
+    place-content: center;
+    
+    .title {
+      text-transform: uppercase;
+      position: relative;
+      line-height: 0;
+      .yokoso{
+        position: relative;
+        left: 84%;
+        top: 4.7rem ;
+        font-family: var(--Noto-Sans-Japanese);
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      .welcome {
+        font-size: 10rem;
+        font-weight: 800;
+        z-index: 111111;
+      }
+      .text {
+        position: relative;
+        top: -5rem;
+        left: 25%;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 6px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .cursive {
+        font-family: var(--Barbershop-in-Thailand);
+        font-size: 6rem;
+        text-transform: capitalize;
+        position: relative;
+        top: -8rem;
+        left: 8%;
+      }
+    }
+  }
+}
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -7rem;
+  margin: 0 4rem 0 7rem;
+  .card {
+    margin-right: 3rem;
+    .c-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .c-text {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.rojo {
+  position: absolute;
+  width: 4.4rem;
+  height:4.4rem;
+  border-radius: 50%;
+  background-color: #d62829;
+  top: 18rem;
+  left: 54.5%;
+  z-index: 1;
+}
